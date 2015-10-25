@@ -1,3 +1,3 @@
 # landing
 
-salesvideo studio
+SalesVideo Studio
