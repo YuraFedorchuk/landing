@@ -1,3 +1,8 @@
+@media (max-width: 1200px) {
+  .absolute {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 570px;
@@ -69,4 +74,12 @@ form input {
    border: none !important;
    box-shadow: 0 0 5px black !important;
    text-align: center;
+}
+
+.arrow {
+  -webkit-transform: rotate(-80deg);
+  -moz-transform: rotate(-80deg);
+  -ms-transform: rotate(-80deg);
+  -o-transform: rotate(-80deg);
+  transform: rotate(-80deg);
 }
