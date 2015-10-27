@@ -1,15 +1,72 @@
 @media (min-width: 768px) {
   .container {
-    width: 670px;
+    width: 570px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 800px;
+    width: 700px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1070px;
+    width: 970px;
   }
+}
+
+html {
+  font-family: 'Zócalo Text';
+  background-color: #eee;
+}
+.page-header {
+  text-align: center;
+}
+.image {
+  text-align: center;
+}
+.main {
+  color: white;
+  background: url('img/bg1.jpg') cover;
+  padding: 2% 0;
+}
+
+button {
+  border-radius: 0px !important;
+  opacity: 1 !important;
+}
+
+.absolute {
+  position: absolute;
+}
+
+button {
+  background-color: #f71 !important;
+  border: none !important;
+  color: white !important;
+  padding: 5% 15% !important;
+  font-family: 'Verdana' !important;
+  box-shadow: 0 0 40px red !important;
+  transition: .5s !important;
+}
+
+button:hover {
+  opacity: .5 !important;
+  transition: .5s !important;
+}
+
+button:active {
+  border: none;
+}
+
+form {
+  font-family: 'Zócalo Text';
+  box-shadow: 0 0 100px white;
+}
+
+form input {
+   font-size: 18px !important;
+   padding: 6% !important;
+   border: none !important;
+   box-shadow: 0 0 5px black !important;
+   text-align: center;
 }
