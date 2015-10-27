@@ -6,13 +6,23 @@
     <title>Продающее видео</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Andika&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
     <style media="screen">
+      html {
+        font-family: 'Zócalo Text';
+        background-color: #eee;
+      }
       .page-header {
         text-align: center;
       }
       .image {
         text-align: center;
+      }
+      .main {
+        color: white;
+        background-color: #7df;
+        padding: 2% 0;
       }
     </style>
   </head>
@@ -35,19 +45,19 @@
       </div>
       <div class="main">
         <div class="container">
-          <h2 class="page-header center-block">
-            Закажите Продающее Видео на 1-2 Минуты, которое Увеличит Вашу Конверсию на <strong>20-40%</strong>
-            и Принесет Вам в <strong>2-3 Раза</strong> Больше Клиентов в 2015-2016 Годах <br />
+          <h2 class="page-header center-block" style="font-family: 'Andika', sans-serif; font-size: 3em; text-shadow: 0 0 1px black;">
+            Закажите Продающее Видео на 1-2 Минуты, которое Увеличит Вашу Конверсию на <strong style="color: orange;">64-85%</strong>
+            и Принесет Вам в <strong style="color: orange;">2-4 Раза</strong> Больше Клиентов в 2015-2016 Годах <br />
             <small>Производство Продающих Видео по всей Территории СНГ</small>
           </h2>
-          <div class="row">
-            <div class="col-md-6">
+          <div class="row" style="padding-top: 5%;">
+            <div class="col-md-7">
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ePbKGoIGAXY"></iframe>
               </div>
             </div>
-            <div class="col-md-6">
-              <form role="form" action="=" method="post">
+            <div class="col-md-5">
+              <form role="form" action="" class="center-block" method="post" style="padding: 3%; background-color: #333;">
                 <div class="form-group">
                   <label for="name">Email</label>
                   <input type="name" class="form-control" id="name" placeholder="Enter name">
@@ -60,7 +70,7 @@
                   <label for="phone">Phone</label>
                   <input type="phone" class="form-control" id="phone" placeholder="Enter phone">
                 </div>
-                <button type="submit" class="btn btn-danger btn-lg center-block" style="font-size:2em;">Закажите Сейчас!</button>
+                <button type="submit" class="btn btn-danger btn-lg center-block" style="font-size:3em;">Закажите Сейчас!</button>
               </form>
             </div>
           </div>
@@ -89,13 +99,16 @@
         <div class="container">
           <h2 class="page-header center-block">Некоторые из Наших Клиентов...</h2>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-2">
+                <img src="img/urgatravel.png" alt="urgatravel" />
+              </div>
+              <div class="col-md-8">
                 <div class="row">
                   <div class="col-md-6 image">
                     <img src="img/acmlv.png" alt="acmlv" />
                   </div>
                   <div class="col-md-6 image">
-                    <img src="img/medialook.png" alt="medialook" style="width:100%"/>
+                    <img src="img/medialook.png" alt="medialook" style="width:90%"/>
                   </div>
                 </div>
                 <div class="row">
@@ -107,11 +120,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <img src="img/shownabiz.png" alt="shownabiz" style="width: 90%" height=200 />
-              </div>
-              <div class="col-md-3">
-                <img src="img/urgatravel.png" alt="urgatravel" />
+              <div class="col-md-2">
+                <img src="img/shownabiz.png" alt="shownabiz" height=200 />
               </div>
             </div>
         </div>
