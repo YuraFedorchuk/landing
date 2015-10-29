@@ -19,16 +19,20 @@
   }
 }
 
-html {
+body {
   font-family: 'Zócalo Text';
-  background-color: #eee;
+  background-color: #eee !important;
 }
+
 .page-header {
   text-align: center;
+  font-size: 3em;
 }
+
 .image {
   text-align: center;
 }
+
 .main {
   color: white;
   background: url('img/bg1.jpg') cover;
@@ -79,4 +83,32 @@ form input {
   -ms-transform: rotate(-80deg);
   -o-transform: rotate(-80deg);
   transform: rotate(-80deg);
+}
+
+.why-we .adv {
+  font-family: 'Marck Script', cursive;
+  text-align: center !important;
+  width: 40%;
+  margin: 2% 5%;
+  padding: 5%;
+  -webkit-box-shadow: 20px 20px 20px grey;
+  -moz-box-shadow: 20px 20px 20px grey;
+  -ms-box-shadow: 20px 20px 20px grey;
+  -o-box-shadow: 20px 20px 20px grey;
+  box-shadow: 20px 20px 20px grey;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: white;
+}
+
+.why-we .adv img {
+  width: 40%;
+  height: 40%;
+}
+
+.why-we .adv h4 {
+  font-size: 1.7em;
 }
