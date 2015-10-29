@@ -25,6 +25,7 @@ html {
 }
 .page-header {
   text-align: center;
+  font-weight: bold;
 }
 .image {
   text-align: center;
@@ -47,12 +48,20 @@ button {
   color: white !important;
   padding: 5% 15% !important;
   font-family: 'Verdana' !important;
+  -webkit-box-shadow: 0 0 40px red !important;
+  -moz-box-shadow: 0 0 40px red !important;
+  -ms-box-shadow: 0 0 40px red !important;
+  -o-box-shadow: 0 0 40px red !important;
   box-shadow: 0 0 40px red !important;
   transition: .5s !important;
 }
 
 button:hover {
   opacity: .5 !important;
+  -webkit-transition: .5s !important;
+  -moz-transition: .5s !important;
+  -ms-transition: .5s !important;
+  -o-transition: .5s !important;
   transition: .5s !important;
 }
 
@@ -62,6 +71,10 @@ button:active {
 
 form {
   font-family: 'Zócalo Text';
+  -webkit-box-shadow: 0 0 20px black !important;
+  -moz-box-shadow: 0 0 20px black !important;
+  -ms-box-shadow: 0 0 20px black !important;
+  -o-box-shadow: 0 0 20px black !important;
   box-shadow: 0 0 100px white;
 }
 
@@ -69,8 +82,21 @@ form input {
    font-size: 18px !important;
    padding: 6% !important;
    border: none !important;
+   -webkit-box-shadow: 0 0 20px black !important;
+   -moz-box-shadow: 0 0 20px black !important;
+   -ms-box-shadow: 0 0 20px black !important;
+   -o-box-shadow: 0 0 20px black !important;
    box-shadow: 0 0 5px black !important;
    text-align: center;
+}
+
+form input:hover {
+  -webkit-box-shadow: 0 0 20px black !important;
+  -moz-box-shadow: 0 0 20px black !important;
+  -ms-box-shadow: 0 0 20px black !important;
+  -o-box-shadow: 0 0 20px black !important;
+  box-shadow: 0 0 20px black !important;
+  cursor: pointer;
 }
 
 .arrow {
