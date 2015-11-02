@@ -21,7 +21,7 @@
 
 body {
   font-family: 'Zócalo Text';
-  background-color: #eee !important;
+  /*background-color: #eee !important;*/
 }
 
 .page-header {
@@ -118,13 +118,14 @@ form input:hover {
 }
 
 .why-we .adv {
-  font-family: 'Marck Script', cursive;
+  /*font-family: 'Marck Script', cursive;*/
   text-align: center !important;
-  width: 40%;
-  margin: 2% 5%;
-  padding: 5%;
+  width: 35%;
+  /*height: 250px;*/
+  margin: 2% 7%;
+  padding: 2%;
   box-sizing: border-box;
-  border: 7px solid #fb8;
+  border: 7px solid #8bf;
   -webkit-box-shadow: 20px 20px 20px grey;
   -moz-box-shadow: 20px 20px 20px grey;
   -ms-box-shadow: 20px 20px 20px grey;
@@ -136,6 +137,10 @@ form input:hover {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   background-color: white;
+}
+
+.why-we strong {
+  color: orange;
 }
 
 .why-we .adv img {
@@ -150,3 +155,61 @@ form input:hover {
 .padding {
   padding: 5% 0;
 }
+
+/*STOCK*/
+.stock {
+  background: #7cf;
+  margin-top: 3%;
+  padding: 3% 0;
+  color: white;
+  text-shadow: 0 0 8px black;
+}
+
+/*CLIENTS*/
+.clients {
+  background: #7cf;
+  color: white;
+}
+
+/*STOCK2*/
+.stock2 {
+  background: #7cf;
+  color: white;
+  text-shadow: 0 0 8px black;
+  padding: 7% 0;
+}
+
+/*WORKPROCESS*/
+.workprocess {
+  background: #eee;
+  padding-bottom: 5%;
+}
+
+/*WHATWEDO*/
+.whatwedo {
+  padding-bottom: 7%;
+}
+.whatwedo li:before
+{
+  content: '✔';
+  margin-left: -1em;
+  margin-right: .100em;
+}
+
+.whatwedo ul
+{
+  font-size: 1.5em;
+  padding-left: 20px;
+  text-indent: 2px;
+  list-style: none;
+  list-style-position: outside;
+}
+
+/*EXAMPLES*/
+.examples {
+  background: #7cf;
+  color: white;
+  padding-bottom: 7%;
+}
+
+/*FOOTER*/
