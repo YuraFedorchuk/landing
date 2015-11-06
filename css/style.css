@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: 'Zócalo Text';
+  font-family: 'Adelle';
   /*background-color: #eee !important;*/
 }
 
@@ -117,38 +117,21 @@ form input:hover {
   transform: rotate(-80deg);
 }
 
-.why-we .adv {
+.why-we  {
   /*font-family: 'Marck Script', cursive;*/
   text-align: center !important;
-  width: 35%;
-  /*height: 250px;*/
-  margin: 2% 7%;
-  padding: 2%;
-  box-sizing: border-box;
-  border: 7px solid #8bf;
-  -webkit-box-shadow: 20px 20px 20px grey;
-  -moz-box-shadow: 20px 20px 20px grey;
-  -ms-box-shadow: 20px 20px 20px grey;
-  -o-box-shadow: 20px 20px 20px grey;
-  box-shadow: 20px 20px 20px grey;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  background-color: white;
 }
 
 .why-we strong {
   color: orange;
 }
 
-.why-we .adv img {
+.why-we img {
   width: 40%;
   height: 40%;
 }
 
-.why-we .adv h4 {
+.why-we h4 {
   font-size: 1.7em;
 }
 
@@ -158,22 +141,23 @@ form input:hover {
 
 /*STOCK*/
 .stock {
-  background: #7cf;
+  /*background: #eee;*/
+  background: #36ACEB;
   margin-top: 3%;
   padding: 3% 0;
   color: white;
-  text-shadow: 0 0 8px black;
+  /*text-shadow: 0 0 8px black;*/
 }
 
 /*CLIENTS*/
 .clients {
-  background: #7cf;
+  background: #eee;
   color: white;
 }
 
 /*STOCK2*/
 .stock2 {
-  background: #7cf;
+  background: #eee;
   color: white;
   text-shadow: 0 0 8px black;
   padding: 7% 0;
