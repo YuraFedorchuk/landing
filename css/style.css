@@ -138,7 +138,7 @@ input {
 .main form {
   margin: 0 auto;
   text-align: center;
-  padding: 20px;
+  padding: 35px 20px;
   box-shadow: 0 0 60px #2990C4;
   width: 300px;
   margin-right: 50px;
@@ -151,6 +151,7 @@ input {
 
 .main form h3 {
   color: #F5BE0A;
+  line-height: 22px;
 }
 
 .main form input {
@@ -204,7 +205,7 @@ input {
   text-align: center;
   font-family: 'Marck Script', cursive;
   padding-left: 50px;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
 .main .video iframe {
@@ -213,12 +214,11 @@ input {
 
 .bottom {
   left: 47%;
-  top: 747px;
+  top: 761px;
   position: absolute;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 40px 0 40px;
-  /*border-color: green transparent transparent transparent;*/
   border-color: #0B3162 transparent transparent transparent;
 }
