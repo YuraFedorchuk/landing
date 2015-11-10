@@ -311,14 +311,15 @@ input {
 .stock button {
   padding: 20px 40px;
   font-size: 30px;
-  background: #F48151;
+  background: #FF5522;
+  /*background: #FF8151;*/
   color: white;
   font-weight: bold;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
   -webkit-transition: .5s;
   -moz-transition: .5s;
   -o-transition: .5s;
@@ -356,4 +357,42 @@ input {
 /*SECTION 5*/
 .aboutus {
   padding: 70px 0;
+}
+
+.aboutus h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.aboutus .review-cont {
+  text-align: center;
+}
+
+.aboutus .review {
+  /*background: #eee;*/
+  background: #222;
+  color: white;
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 30px 30px 30px black;
+}
+
+.aboutus .review img {
+  width: 150px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.aboutus .review h4 {
+  text-align: left;
 }
