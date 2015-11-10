@@ -255,6 +255,18 @@ input {
   height: 100px;
 }
 
+.bottom2 {
+  z-index: 1;
+  left: 47%;
+  top: 532px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 40px 0 40px;
+  border-color: white transparent transparent transparent;
+}
+
 
 /*SECTION 4*/
 .stock {
@@ -328,14 +340,20 @@ input {
   transition: .5s;
 }
 
-.bottom2 {
+.bottom3 {
   z-index: 1;
   left: 47%;
-  top: 532px;
+  top: 761px;
   position: absolute;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 40px 0 40px;
-  border-color: white transparent transparent transparent;
+  border-color: #eee transparent transparent transparent;
+}
+
+
+/*SECTION 5*/
+.aboutus {
+  padding: 70px 0;
 }
