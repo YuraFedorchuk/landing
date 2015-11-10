@@ -62,8 +62,8 @@ input {
 .header button {
   color: #555;
   position: absolute;
-  left: 700px;
-  top: 50px;
+  left: -240px;
+  top: 20px;
   padding: 12px 15px;
   font-family: 'Myriad Pro Light';
   letter-spacing: -1px;
@@ -212,13 +212,130 @@ input {
   border: none;
 }
 
-.bottom {
+.bottom1 {
   left: 47%;
-  top: 761px;
+  top: 796px;
   position: absolute;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 40px 0 40px;
-  border-color: #0B3162 transparent transparent transparent;
+  border-color: #022959 transparent transparent transparent;
+}
+
+/*SECTION 3*/
+.why-we {
+  padding: 80px 0;
+  position: relative;
+}
+
+.why-we h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.why-we .items {
+  padding-top: 100px;
+}
+
+.why-we .items strong {
+  border-bottom: solid 2px orange;
+}
+
+.why-we .items > * {
+  float: left;
+  width: 235px;
+  text-align: center;
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+.why-we .items img {
+  width: 100px;
+  height: 100px;
+}
+
+
+/*SECTION 4*/
+.stock {
+  padding: 80px 0;
+  background-color: #eee;
+  text-align: center;
+  position: relative;
+}
+.stock h1 {
+  font-size: 48px;
+}
+
+.stock h1 img {
+  height: 50px;
+}
+
+.stock h1 strong {
+  background: #EC1E3B;
+  color: white;
+  padding: 0 10px;
+}
+
+.stock h3 {
+  padding-top: 20px;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 24px;
+  width: 550px;
+}
+
+.stock i {
+  display:block;
+  margin:0 auto;
+  width: 500px;
+  text-align:center;
+  line-height:20px;
+  background:white;
+  padding:20px;
+  box-shadow:inset 0 0 10px grey;
+}
+
+.stock button {
+  padding: 20px 40px;
+  font-size: 30px;
+  background: #F48151;
+  color: white;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  transition: .5s;
+}
+
+.stock button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 50px #F48151;
+  -moz-box-shadow: 0 0 50px #F48151;
+  -o-box-shadow: 0 0 50px #F48151;
+  -ms-box-shadow: 0 0 50px #F48151;
+  box-shadow: 0 0 50px #F48151;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  transition: .5s;
+}
+
+.bottom2 {
+  z-index: 1;
+  left: 47%;
+  top: 532px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 40px 0 40px;
+  border-color: white transparent transparent transparent;
 }
