@@ -175,25 +175,17 @@ input {
   width: 280px;
   font-size: 32px;
   font-weight: bold;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
   -webkit-transition: .5s;
   -moz-transition: .5s;
   -o-transition: .5s;
   -ms-transition: .5s;
   transition: .5s;
+  box-shadow: 15px 15px 15px black;
 }
 
 .main form button:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0 0 50px red;
-  -moz-box-shadow: 0 0 50px red;
-  -o-box-shadow: 0 0 50px red;
-  -ms-box-shadow: 0 0 50px red;
-  box-shadow: 0 0 50px red;
+  opacity: .7;
   -webkit-transition: .5s;
   -moz-transition: .5s;
   -o-transition: .5s;
@@ -312,14 +304,9 @@ input {
   padding: 20px 40px;
   font-size: 30px;
   background: #FF5522;
-  /*background: #FF8151;*/
   color: white;
   font-weight: bold;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -o-border-radius: 30px;
-  -ms-border-radius: 30px;
-  border-radius: 30px;
+  box-shadow: 20px 20px 20px black;
   -webkit-transition: .5s;
   -moz-transition: .5s;
   -o-transition: .5s;
@@ -329,11 +316,7 @@ input {
 
 .stock button:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0 0 50px #F48151;
-  -moz-box-shadow: 0 0 50px #F48151;
-  -o-box-shadow: 0 0 50px #F48151;
-  -ms-box-shadow: 0 0 50px #F48151;
-  box-shadow: 0 0 50px #F48151;
+  opacity: .7;
   -webkit-transition: .5s;
   -moz-transition: .5s;
   -o-transition: .5s;
@@ -356,12 +339,14 @@ input {
 
 /*SECTION 5*/
 .aboutus {
-  padding: 70px 0;
+  padding: 70px 0 100px 0;
+  position: relative;
 }
 
 .aboutus h2 {
   text-align: center;
   font-size: 30px;
+  margin-bottom: 50px;
 }
 
 .aboutus .review-cont {
@@ -369,7 +354,6 @@ input {
 }
 
 .aboutus .review {
-  /*background: #eee;*/
   background: #222;
   color: white;
   width: 300px;
@@ -386,13 +370,172 @@ input {
 
 .aboutus .review img {
   width: 150px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -o-border-radius: 50px;
-  -ms-border-radius: 50px;
-  border-radius: 50px;
 }
 
 .aboutus .review h4 {
   text-align: left;
+}
+
+.aboutus .person1 img,
+.aboutus .person2 img {
+  height: 100px;
+  width: 100px;
+}
+
+.aboutus .person1 {
+  float: left;
+  transform: rotate(-20deg);
+}
+
+.aboutus .person2 {
+  float: right;
+  transform: scale(-1, 1);
+  margin-left: 12px;
+}
+
+.bottom4 {
+  z-index: 1;
+  left: 47%;
+  top: 719px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 40px 0 40px;
+  border-color: white transparent transparent transparent;
+}
+
+
+/*SECTION 6*/
+.clients {
+  padding: 100px 0;
+  position: relative;
+  background: #eee;
+}
+
+.clients h2 {
+  font-size: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.clients .clients-cont > * {
+  float: left;
+  margin: 0 25px;
+}
+
+.clients .clients-cont .clients-hor > * {
+  margin: 17px 0;
+}
+
+.bottom5 {
+  z-index: 1;
+  left: 47%;
+  top: 519px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 40px 0 40px;
+  border-color: #eee transparent transparent transparent;
+}
+
+/*SECTION 7*/
+.brands {
+  background: #0094D7;
+  color: white;
+  padding: 80px 50px;
+  position: relative;
+}
+
+.brands h2 {
+  text-align: center;
+  font-size: 30px;
+  background: #EC1E3B;
+  margin-bottom: 20px;
+}
+
+.brands h3 {
+  text-align: center;
+  margin-bottom: 100px;
+  color: #eee;
+}
+
+.brands h3 strong {
+  border-bottom: solid 2px orange;
+}
+
+.brands h3 span {
+  color: white;
+  font-size: 28px;
+  font-family: verdana. sans-serif;
+}
+
+.brands .brands-cont {
+  margin-left: 43px;
+}
+
+.brands .brands-cont > * {
+  display: inline-block;
+  position: relative;
+}
+
+.brands .brands-cont h5 {
+  font-size: 20px;
+}
+
+.brands button {
+  padding: 20px 40px;
+  font-size: 30px;
+  background: #FF5522;
+  color: white;
+  font-weight: bold;
+  box-shadow: 20px 20px 20px black;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  transition: .5s;
+}
+
+.brands button:hover {
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  transition: .5s;
+}
+
+.bottom6 {
+  z-index: 1;
+  left: 44.4%;
+  top: 992px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 40px 0 40px;
+  border-color: #0094D7 transparent transparent transparent;
+}
+
+/*SECTION 8*/
+.workprocess {
+  padding: 70px 0;
+  background: #eee;
+}
+
+.workprocess h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.workprocess-cont {
+  text-align: center;
+}
+
+.workprocess-cont li {
+  list-style-image: url('img/arrow_small.gif');
 }
