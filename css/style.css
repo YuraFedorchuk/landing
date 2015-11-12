@@ -598,7 +598,8 @@ input {
   padding: 20px 0;
 }
 
-.stock2 form {
+.stock2 form,
+.callforaction form {
   margin: 0 auto;
   margin-top: 40px;
   text-align: center;
@@ -614,13 +615,15 @@ input {
   border-radius: 5px;
 }
 
-.stock2 form h3 {
+.stock2 form h3,
+.callforaction form h3 {
   color: #FFA921;
   line-height: 22px;
 }
 
 
-.stock2 form input {
+.stock2 form input,
+.callforaction form input {
   box-shadow: inset 0 0 5px black;
   font-size: 16px;
   margin: 10px 0;
@@ -629,13 +632,15 @@ input {
   font-family: 'verdana';
 }
 
-.stock2 form input:hover {
+.stock2 form input:hover,
+.callforaction form input:hover {
   border: none;
   cursor: pointer;
   box-shadow: 0 0 30px #FFA921;
 }
 
-.stock2 form button {
+.stock2 form button,
+.callforaction form button {
   background: #EC1E3B;
   color: white;
   padding: 10px;
@@ -650,7 +655,8 @@ input {
   box-shadow: 15px 15px 15px black;
 }
 
-.stock2 form button:hover {
+.stock2 form button:hover,
+.callforaction form button:hover {
   cursor: pointer;
   opacity: .7;
   -webkit-transition: .5s;
@@ -725,4 +731,24 @@ input {
 .examples .examples-cont div:hover {
   opacity: .8;
   cursor: pointer;
+}
+
+/*SECTION 12*/
+.callforaction {
+  padding: 70px 0;
+  background: #eee;
+  position: relative;
+}
+
+.callforaction h2 {
+  text-align: center;
+  font-size: 30px;
+  background: orange;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.callforaction .callforaction-cont > * {
+  display: inline-block;
+  width: 400px;
 }
