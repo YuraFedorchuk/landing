@@ -569,3 +569,88 @@ input {
   border-width: 30px 40px 0 40px;
   border-color: #eee transparent transparent transparent;
 }
+
+/*SECTION 9*/
+.stock2 {
+  padding: 70px 0;
+  position: relative;
+  text-align: center;
+}
+
+.stock2 .stock2-cont > * {
+  display: inline-block;
+  width: 450px;
+  text-align: center;
+}
+
+.stock2 form {
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  padding: 35px 20px;
+  background: #eee;
+  width: 300px;
+  box-shadow: 0 0 10px black;
+  margin-right: 50px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.stock2 form h3 {
+  color: #FFA921;
+  line-height: 22px;
+}
+
+.stock2 form input {
+  box-shadow: inset 0 0 5px black;
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+  width: 80%;
+  font-family: 'Verdana';
+}
+
+.stock2 form input:hover {
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 30px #FFA921;
+}
+
+.stock2 form button {
+  background: #EC1E3B;
+  color: white;
+  padding: 10px;
+  width: 280px;
+  font-size: 32px;
+  font-weight: bold;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  transition: .5s;
+  box-shadow: 15px 15px 15px black;
+}
+
+.stock2 form button:hover {
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  transition: .5s;
+}
+
+.stock2 h2 {
+  margin-bottom: 10px;
+}
+
+.stock2 h2 strong {
+  background: #EC1E3B;
+  color: white;
+  padding: 0 10px;
+  font-size: 40px;
+}
