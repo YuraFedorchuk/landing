@@ -356,6 +356,7 @@ input {
 .aboutus .review {
   background: #222;
   color: white;
+  /*background: #D4F4FF;*/
   width: 300px;
   padding: 30px;
   text-align: center;
@@ -524,6 +525,7 @@ input {
 .workprocess {
   padding: 70px 0;
   background: #eee;
+  position: relative;
 }
 
 .workprocess h2 {
@@ -536,6 +538,34 @@ input {
   text-align: center;
 }
 
-.workprocess-cont li {
-  list-style-image: url('img/arrow_small.gif');
+.workprocess-cont img {
+  width: 100px;
+  height: 100px;
+}
+
+.workprocess-cont div {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+
+.workprocess-cont div span {
+  color: orange;
+  font-size: 24px;
+}
+
+.workprocess-cont div p {
+  text-align: center;
+}
+
+.bottom7 {
+  z-index: 1;
+  left: 47%;
+  top: 389px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 40px 0 40px;
+  border-color: #eee transparent transparent transparent;
 }
