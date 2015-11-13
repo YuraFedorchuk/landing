@@ -713,8 +713,12 @@ input {
   margin-bottom: 20px;
 }
 
+.callforaction .callforaction-cont {
+  margin: 0 auto;
+  width: 810px;
+}
+
 .callforaction .callforaction-cont > * {
   display: inline-block;
   width: 400px;
-  margin: 0 40px;
 }
