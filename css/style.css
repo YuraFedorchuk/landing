@@ -261,11 +261,6 @@ input {
   font-size: 18px;
 }
 
-.why-we .items img {
-  width: 100px;
-  height: 100px;
-}
-
 .bottom2 {
   border-color: white transparent transparent transparent;
 }
@@ -515,11 +510,6 @@ input {
 
 .workprocess-cont {
   text-align: center;
-}
-
-.workprocess-cont img {
-  width: 100px;
-  height: 100px;
 }
 
 .workprocess-cont div {
