@@ -716,8 +716,5 @@ input {
 .callforaction .callforaction-cont > * {
   display: inline-block;
   width: 400px;
-}
-
-.bottom11 {
-  border-color: #eee transparent transparent transparent;
+  margin: 0 40px;
 }
