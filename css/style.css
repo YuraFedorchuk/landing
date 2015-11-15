@@ -3,11 +3,8 @@
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  min-width: 1230px;
+html {
+  font-weight: bold;
 }
 
 iframe {
@@ -75,6 +72,49 @@ input {
   border-width: 30px 40px 0 40px;
 }
 
+
+#popup {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+}
+#popup-cont {
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.popup-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  text-align: left;
+  width: 460px;
+  height: 536px;
+}
+#close {
+  font-weight:bold;
+  font-size:20px;
+  line-height:28px;
+  position:absolute;
+  background:#ddd;
+  padding:0 9px 3px 9px;
+  border-radius:40px;
+  top: -16px;
+  left: -16px;
+  color: #333;
+}
+#close:hover {
+  cursor: pointer;
+  background: #eee;
+}
 
 
 /*SECTION 1*/
@@ -173,6 +213,16 @@ input {
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
+  position: relative;
+}
+
+.main form img {
+  position: absolute;
+  left: 280px;
+  top: -30px;
+  height: 130px;
+  width: 80px;
+  opacity: .8;
 }
 
 .main form h3 {
@@ -236,7 +286,7 @@ input {
 
 /*SECTION 3*/
 .why-we {
-  padding: 70px 0;
+  padding: 60px 0;
   position: relative;
 }
 
@@ -246,7 +296,7 @@ input {
 }
 
 .why-we .items {
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .why-we .items strong {
@@ -273,7 +323,7 @@ input {
 
 /*SECTION 4*/
 .stock {
-  padding: 80px 0;
+  padding: 60px 0;
   background-color: #eee;
   text-align: center;
   position: relative;
@@ -342,59 +392,13 @@ input {
 
 /*SECTION 5*/
 .aboutus {
-  padding: 70px 0 100px 0;
+  padding: 60px 0 100px 0;
   position: relative;
 }
 
 .aboutus h2 {
   text-align: center;
   font-size: 30px;
-  margin-bottom: 50px;
-}
-
-.aboutus .review-cont {
-  text-align: center;
-}
-
-.aboutus .review {
-  background: #222;
-  color: white;
-  /*background: #D4F4FF;*/
-  width: 300px;
-  padding: 30px;
-  text-align: center;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
-  display: inline-block;
-  box-shadow: 30px 30px 30px black;
-}
-
-.aboutus .review img {
-  width: 150px;
-}
-
-.aboutus .review h4 {
-  text-align: left;
-}
-
-.aboutus .person1 img,
-.aboutus .person2 img {
-  height: 100px;
-  width: 100px;
-}
-
-.aboutus .person1 {
-  float: left;
-  transform: rotate(-20deg);
-}
-
-.aboutus .person2 {
-  float: right;
-  transform: scale(-1, 1);
-  margin-left: 12px;
 }
 
 .bottom4 {
@@ -404,7 +408,7 @@ input {
 
 /*SECTION 6*/
 .clients {
-  padding: 100px 0;
+  padding: 70px 0;
   position: relative;
   background: #eee;
 }
@@ -502,7 +506,7 @@ input {
 
 /*SECTION 8*/
 .workprocess {
-  padding: 70px 0;
+  padding: 60px 0;
   background: #eee;
   position: relative;
 }
@@ -564,7 +568,8 @@ input {
 }
 
 .stock2 form,
-.callforaction form {
+.callforaction form,
+.popup-content form {
   margin: 0 auto;
   margin-top: 40px;
   text-align: center;
@@ -578,17 +583,33 @@ input {
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
+  position: relative;
+}
+
+.stock2 form img,
+.callforaction form img,
+.popup-content form img {
+  position: absolute;
+  left: 280px;
+  top: -30px;
+  height: 130px;
+  width: 80px;
+  opacity: .8;
 }
 
 .stock2 form h3,
-.callforaction form h3 {
+.callforaction form h3,
+.popup-content form h3 {
   color: #FFA921;
   line-height: 22px;
+  width: 200px;
+  margin: 0 auto;
 }
 
 
 .stock2 form input,
-.callforaction form input {
+.callforaction form input,
+.popup-content form input {
   box-shadow: inset 0 0 5px black;
   font-size: 16px;
   margin: 10px 0;
@@ -598,14 +619,16 @@ input {
 }
 
 .stock2 form input:hover,
-.callforaction form input:hover {
+.callforaction form input:hover,
+.popup-content form input:hover {
   border: none;
   cursor: pointer;
   box-shadow: 0 0 30px #FFA921;
 }
 
 .stock2 form button,
-.callforaction form button {
+.callforaction form button,
+.popup-content form button {
   background: #EC1E3B;
   color: white;
   padding: 10px;
@@ -621,7 +644,8 @@ input {
 }
 
 .stock2 form button:hover,
-.callforaction form button:hover {
+.callforaction form button:hover,
+.popup-content form button:hover {
   cursor: pointer;
   opacity: .7;
   -webkit-transition: .5s;
@@ -648,7 +672,7 @@ input {
 
 /*SECTION 10*/
 .whatwedo {
-  padding: 70px 0;
+  padding: 60px 0;
   background: #eee;
 }
 
@@ -721,4 +745,144 @@ input {
 .callforaction .callforaction-cont > * {
   display: inline-block;
   width: 400px;
+}
+
+/*CALLBACK*/
+.album {
+  z-index:10;
+  position:relative;
+  width:80px;
+  height:80px;
+  background-size: 100% 100%;
+  border-radius:40px;
+  transition: .5s;
+}
+
+.album:hover {
+  opacity: .5;
+  cursor:pointer;
+  transition: .5s;
+}
+
+.pulse {
+  position:absolute;
+  top:0;
+  left:0;
+  width:80px;
+  height:80px;
+  border-radius:40px;
+  background:#2990C4;
+  -webkit-animation: pulsating 2s ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity:0.0
+  z-index:10;
+}
+
+.ringbase {
+  position:absolute;
+  top:0;
+  left:0;
+  width:80px;
+  height:80px;
+  border-radius:40px;
+  opacity:0.0
+  z-index:10;
+}
+
+.ring1 {
+  box-shadow:0 0 2px 1px #2990C4, 0 0 2px 1px #2990C4;
+  -webkit-animation: ring 2s ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  z-index:10;
+}
+
+.ring2 {
+  box-shadow:0 0 1px 0px #2990C4, 0 0 1px 0px #2990C4;
+  -webkit-animation: ring 2s ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.5s;
+  z-index:10;
+}
+
+@-webkit-keyframes pulsating {
+  0% {opacity: 0.0;}
+  50% {opacity: 0.2;}
+  100% {opacity: 0.0;}
+}
+
+@-webkit-keyframes ring {
+  0% {-webkit-transform: scale(0.4, 0.4); opacity: 0.0;}
+  50% {opacity: 0.6;}
+  100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.0;}
+}
+
+
+/*TIMER*/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext,cyrillic);
+
+
+#timer {
+	margin:0 auto;
+  width: 280px;
+}
+
+#timer p {
+	color: #fff;
+	padding:4px 0;
+	width:24px;
+	height:55px;
+	float:left;
+	font-size:27px;
+	font-weight:bold;
+	position:absolute;
+  margin-top: 0;
+  font-family: 'PT Sans',sans-serif;
+}
+
+
+#hour, #min, #sec, #day {
+  float: left;
+  padding: 3px;
+  width: 50px;
+  height: 55px;
+  position: relative;
+  display: block;
+  margin-left: .7px;
+}
+
+
+#sec1,#min1,#hour1,#day1, #day3, #sec3, #min3, #hour3, #hour5, #min5, #sec5, #day5,#hour7, #min7, #sec7, #day7, #hour9, #min9, #sec9, #day9, #hour11, #min11, #sec11, #day11   {
+	margin-left: 23px;
+  padding-top: 4px;
+}
+#timer_wrap {
+	background: url(../img/dash2.png) center top no-repeat;
+	height:60px;
+	padding:0px 2px;
+	font-family: "Times New Roman";
+	font-size: 16px;
+  display: block;
+  position: relative;
+  width: 280px;
+  padding-left: 4px;
+}
+
+#clock {
+	height:65px;
+	padding-left: 7px;
+	position:absolute;
+}
+#razd {
+	float:left;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:3em;
+	width: 13px;
+	height: 60px;
+
+}
+#stop {
+	color:white;
+	font-size:2em;
+	position:absolute;
 }
