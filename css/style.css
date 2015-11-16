@@ -236,6 +236,7 @@ input {
   text-align: center;
   width: 80%;
   font-family: 'Verdana';
+  color: #222;
 }
 
 .main form input:hover {
@@ -606,6 +607,7 @@ input {
   text-align: center;
   width: 80%;
   font-family: 'verdana';
+  color: #222;
 }
 
 .stock2 form input:hover,

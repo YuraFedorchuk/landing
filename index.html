@@ -7,8 +7,10 @@
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Andika&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+    <link href="css/theme-default.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/style.css" charset="utf-8">
     <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/form-validator/jquery.form-validator.min.js" charset="utf-8"></script>
     <script src="js/jquery.cookie.js" charset="utf-8"></script>
     <script src="js/script.js" charset="utf-8"></script>
     <script type="text/javascript">
@@ -37,6 +39,12 @@
           popup.fadeOut(500);
         });
 
+
+        // VALIDATION
+        $.validate({
+         modules : 'security, html5, sanitize'
+        });
+
       });
 
       /*TIMER*/
@@ -55,6 +63,7 @@
         var dateEnd = returnEndDate(0,0,48);
         $.cookie("timer5", dateEnd, {expires: null});
       }
+
     </script>
   </head>
 
@@ -72,13 +81,23 @@
                 <h3 style="font-size:22px;width: 300px;">И мы с Вами свяжемся!</h3>
                 <br />
                 <div>
-                  <input type="email" id="email" placeholder="Введите Ваш e-mail">
+                  <input type="email" id="email"
+                    data-validation="email"
+                    data-sanitize="escape"
+                    data-validation-error-msg="Введите корректный e-mail"
+                    placeholder="Введите Ваш e-mail">
                 </div>
                 <div>
-                  <input type="name" id="name" placeholder="Введите Ваше имя">
+                  <input type="name" id="name" placeholder="Введите Ваше имя"
+                    data-validation="letternumeric"
+                    data-sanitize="escape"
+                    data-validation-error-msg="Введите правильное имя">
                 </div>
                 <div>
-                  <input type="phone" id="phone" placeholder="Введите Ваш телефон">
+                  <input type="phone" id="phone" pattern="^\+?\d+$"
+                    data-validation-error-msg="Введите правильный телефон"
+                    data-sanitize="escape"
+                    placeholder="Введите Ваш телефон">
                 </div><br />
                 <button style="font-size:42px;width:100%;" type="submit">ЗАКАЖИТЕ</button>
               </form>
@@ -139,13 +158,23 @@
               <img src="img/guarantee.png" width=150 alt="" />
               <h3>Внесите Ваше Имя,<br /> E-mail, моб. тел ниже</h3><br />
               <div>
-                <input type="email" id="email" placeholder="Введите Ваш e-mail">
+                <input type="email" id="email"
+                  data-validation="email"
+                  data-sanitize="escape"
+                  data-validation-error-msg="Введите корректный e-mail"
+                  placeholder="Введите Ваш e-mail">
               </div>
               <div>
-                <input type="name" id="name" placeholder="Введите Ваше имя">
+                <input type="name" id="name" placeholder="Введите Ваше имя"
+                  data-validation="letternumeric"
+                  data-sanitize="escape"
+                  data-validation-error-msg="Введите правильное имя">
               </div>
               <div>
-                <input type="phone" id="phone" placeholder="Введите Ваш телефон">
+                <input type="phone" id="phone" pattern="^\+?\d+$"
+                data-sanitize="escape"
+                  data-validation-error-msg="Введите правильный телефон"
+                  placeholder="Введите Ваш телефон">
               </div>
               <div style="line-height: 14px; font-size: 14px;">Мы гарантируем Вашу конфиденциальность</div>
               <br />
@@ -369,13 +398,23 @@
                 <img src="img/guarantee.png" width=150 alt="" />
                 <h3>Внесите Ваше Имя, E-mail, моб. тел ниже</h3><br />
                 <div>
-                  <input type="email" id="email" placeholder="Введите Ваш e-mail">
+                  <input type="email" id="email"
+                    data-validation="email"
+                    data-sanitize="escape"
+                    data-validation-error-msg="Введите корректный e-mail"
+                    placeholder="Введите Ваш e-mail">
                 </div>
                 <div>
-                  <input type="name" id="name" placeholder="Введите Ваше имя">
+                  <input type="name" id="name" placeholder="Введите Ваше имя"
+                    data-validation="letternumeric"
+                    data-sanitize="escape"
+                    data-validation-error-msg="Введите правильное имя">
                 </div>
                 <div>
-                  <input type="phone" id="phone" placeholder="Введите Ваш телефон">
+                  <input type="phone" id="phone" pattern="^\+?\d+$"
+                    data-sanitize="escape"
+                    data-validation-error-msg="Введите правильный телефон"
+                    placeholder="Введите Ваш телефон">
                 </div><br />
                 <button type="submit">ЗАКАЖИТЕ</button>
               </form>
@@ -458,13 +497,23 @@
                 <img src="img/guarantee.png" width=150 alt="" />
                 <h3>Внесите Ваше Имя, E-mail, моб. тел ниже</h3><br />
                 <div>
-                  <input type="email" id="email" placeholder="Введите Ваш e-mail">
+                  <input type="email" id="email"
+                    data-validation="email"
+                    data-sanitize="escape"
+                    data-validation-error-msg="Введите корректный e-mail"
+                    placeholder="Введите Ваш e-mail">
                 </div>
                 <div>
-                  <input type="name" id="name" placeholder="Введите Ваше имя">
+                  <input type="name" id="name" placeholder="Введите Ваше имя"
+                    data-validation="letternumeric"
+                    data-sanitize="escape"
+                    data-validation-error-msg="Введите правильное имя">
                 </div>
                 <div>
-                  <input type="phone" id="phone" placeholder="Введите Ваш телефон">
+                  <input type="phone" id="phone" pattern="^\+?\d+$"
+                    data-sanitize="escape"
+                    data-validation-error-msg="Введите правильный телефон"
+                    placeholder="Введите Ваш телефон">
                 </div><br />
                 <button type="submit">ЗАКАЖИТЕ</button>
               </form>
