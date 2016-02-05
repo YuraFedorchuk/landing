@@ -5,6 +5,7 @@
 
 html {
   font-weight: bold;
+  min-width: 1250px;
 }
 
 iframe {
@@ -241,9 +242,9 @@ input {
 
 .main form input:hover {
   border: none;
-  cursor: pointer;
   box-shadow: 0 0 30px #2990C4;
 }
+
 
 .main form button {
   background: #EC1E3B;
@@ -279,6 +280,8 @@ input {
 
 .main .video iframe {
   border: none;
+  width: 518px;
+  height: 337px;
 }
 
 .bottom1 {
@@ -388,13 +391,31 @@ input {
 
 /*SECTION 5*/
 .aboutus {
-  padding: 60px 0 100px 0;
+  padding: 60px 0;
   position: relative;
 }
 
 .aboutus h2 {
   text-align: center;
   font-size: 30px;
+}
+
+.aboutus .aboutus-cont {
+  margin-top: 40px;
+}
+
+.aboutus .aboutus-cont div {
+  display: inline-block;
+  width: 40%;
+  background: #222;
+  color:white;
+  padding: 30px;
+  margin-left: 25px;
+  box-shadow: 0 0 50px black;
+}
+
+.aboutus .aboutus-cont div small {
+  color: orange;
 }
 
 .bottom4 {
@@ -614,7 +635,6 @@ input {
 .callforaction form input:hover,
 .popup-content form input:hover {
   border: none;
-  cursor: pointer;
   box-shadow: 0 0 30px #FFA921;
 }
 

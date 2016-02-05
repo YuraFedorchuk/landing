@@ -115,10 +115,6 @@ $(document).ready(function () {
 
 			setTimeout(get_timer,1000);
 		}
-		// else {
-		// 	window.location = "http://geniusmarketing.ru/60days/buy/";
-		// }
-
 	}
 	function animation(vibor,param) {
 		vibor.html(param)
