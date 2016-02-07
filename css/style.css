@@ -130,7 +130,7 @@ input {
   color: #555;
   position: absolute;
   left: -240px;
-  top: 20px;
+  top: 35px;
   padding: 12px 15px;
   font-family: 'Myriad Pro Light';
   letter-spacing: -1px;
@@ -158,6 +158,10 @@ input {
   transition: .5s;
   color: #222;
   background: #ddd;
+}
+
+.header .left {
+  margin-top: 10px;
 }
 
 .header .left h2 {
