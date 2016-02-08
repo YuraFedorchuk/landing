@@ -1,4 +1,6 @@
 <?php
+    defined('_JEXEC') or die('Ограниченый доступ!');
+
     require_once('config.php');
     require_once('functions.php');
 
