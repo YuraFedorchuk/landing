@@ -9,23 +9,25 @@
 
     if ( $domain == $r_domain ) {
 
-        $_POST = f_clean($_POST);
+        $name = $email = $phone = '';
 
-        $name   = $_POST["name"];
-        $email  = $_POST["email"];
-        $phone  = $_POST["phone"];
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $name = secure_input($_POST["name"]);
+            $email = secure_input($_POST["email"]);
+            $phone = secure_input($_POST["phone"]);
+        }
 
         $sent           = mail(MAIL_TO, SUBJECT, compose_message($name, $email, $phone), compose_headers($email));
         $action_sent    = mail($email, ACT_SUBJECT, compose_act_message($name), compose_headers($email));
 
         if ($sent && $action_sent) {
-            echo "Заказ успешно оформлен!\n".$name.", с Вами свяжутся в ближайшее время.\nБонус отправлен Вам на почту. Проверьте папку 'Спам'!";
+            echo SUCCESS;
         } else {
-            echo $name.", к сожалению заказ не оформлен!\nПовторите, пожалуйста, попытку.";
+            echo FAIL;
         }
 
     } else {
-        die('Вам запрещено отправлять форму отсюда!');
+        die(DENIED);
     }
 
 ?>
