@@ -1,6 +1,4 @@
 <?php
-    defined('_JEXEC') or die('Ограниченый доступ!');
-
     function compose_headers($email='imafos_t@ukr.net') {
         return "MIME-Version: 1.0"."\r\nContent-type: text/html; charset=utf-8"."\r\nFrom: FayVideo <info@fayvideo.com>"."\r\nReply-To: ".$email."\r\nX-Mailer: PHP/".phpversion();
     }
