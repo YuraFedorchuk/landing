@@ -17,11 +17,13 @@
             $phone = secure_input($_POST["phone"]);
         }
 
-        $sent           = mail(MAIL_TO, SUBJECT, compose_message($name, $email, $phone), compose_headers($email));
-        $action_sent    = mail($email, ACT_SUBJECT, compose_act_message($name), compose_headers($email));
+        $sent           = true;
+        $action_sent    = true;
+        // $sent           = mail(MAIL_TO, SUBJECT, compose_message($name, $email, $phone), compose_headers($email));
+        // $action_sent    = mail($email, ACT_SUBJECT, compose_act_message($name), compose_headers($email));
 
         if ($sent && $action_sent) {
-            echo SUCCESS;
+            header('Location: success/index.php');
         } else {
             echo FAIL;
         }
