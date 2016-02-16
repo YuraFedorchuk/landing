@@ -409,13 +409,10 @@ input {
 }
 
 .aboutus .aboutus-cont div {
-  display: inline-block;
-  width: 40%;
-  background: #222;
+  float:left;
+  width: 42%;
   color:white;
-  padding: 30px;
-  margin-left: 25px;
-  box-shadow: 0 0 50px black;
+  padding: 20px;
 }
 
 .aboutus .aboutus-cont div small {
