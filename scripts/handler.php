@@ -8,7 +8,6 @@
     $r_domain   = $uri['host'];
 
     if ( $domain == $r_domain ) {
-
         $name = $email = $phone = '';
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -17,13 +16,18 @@
             $phone = secure_input($_POST["phone"]);
         }
 
+        if (!$name || !$email || !$phone) {
+            header("Location: ../nodata.php");
+            return false;
+        }
+
         $sent           = mail(MAIL_TO, SUBJECT, compose_message($name, $email, $phone), compose_headers($email));
         $action_sent    = mail($email, ACT_SUBJECT, compose_act_message($name), compose_headers($email));
 
         if ($sent && $action_sent) {
             header("Location: ../success.php");
         } else {
-            echo FAIL;
+            header("Location: ../fail.php");
         }
 
     } else {
