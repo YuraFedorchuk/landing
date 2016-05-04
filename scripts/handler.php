@@ -21,7 +21,7 @@
         $action_sent    = mail($email, ACT_SUBJECT, compose_act_message($name), compose_headers($email));
 
         if ($sent && $action_sent) {
-            echo SUCCESS;
+            header("Location: ../success.php");
         } else {
             echo FAIL;
         }
@@ -29,4 +29,6 @@
     } else {
         die(DENIED);
     }
+
+
 ?>

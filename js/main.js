@@ -28,36 +28,36 @@ $(function () {
    modules : 'security, html5, sanitize'
   });
 
-  $('form').on('submit', function (event) {
-    event.preventDefault();
-    var email = $(this)[0][0].value;
-    var name = $(this)[0][1].value;
-    var phone = $(this)[0][2].value;
-
-    $.ajax({
-      type: 'POST',
-      dataType: 'text',
-      data: {
-        email: email,
-        name: name,
-        phone: phone
-      },
-      url: 'scripts/handler.php',
-      success: function (resp) {
-        alert(resp);
-      },
-      error: function (e) {
-        alert(e);
-      },
-      statusCode: {
-        500: function() {
-          alert( "Произошла небольшая ошибка! Попробуйте чуть-чуть позже. А пока напишите нам на info@fayvideo.com и мы отправим Вам Бонус Бесплатно!" );
-        }
-      }
-    });
-    $(this)[0].reset();
-    popup.hide();
-  });
+  // $('form').on('submit', function (event) {
+  //   event.preventDefault();
+  //   var email = $(this)[0][0].value;
+  //   var name = $(this)[0][1].value;
+  //   var phone = $(this)[0][2].value;
+  //
+  //   $.ajax({
+  //     type: 'POST',
+  //     dataType: 'text',
+  //     data: {
+  //       email: email,
+  //       name: name,
+  //       phone: phone
+  //     },
+  //     url: 'scripts/handler.php',
+  //     success: function (resp) {
+  //       window.location = '/success.php'
+  //     },
+  //     error: function (e) {
+  //       alert(e);
+  //     },
+  //     statusCode: {
+  //       500: function() {
+  //         alert( "Произошла небольшая ошибка! Попробуйте чуть-чуть позже. А пока напишите нам на info@fayvideo.com и мы отправим Вам Бонус Бесплатно!" );
+  //       }
+  //     }
+  //   });
+  //   $(this)[0].reset();
+  //   popup.hide();
+  // });
 
 });
 
