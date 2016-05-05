@@ -17,7 +17,7 @@
         }
 
         if (!$name || !$email || !$phone) {
-            header("Location: ../nodata.php");
+            header("Location: ../fail.php");
             return false;
         }
 
